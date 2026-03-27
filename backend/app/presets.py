@@ -1,0 +1,92 @@
+"""
+Clinically realistic patient presets for the hackathon demo.
+Each preset provides the 11 raw input fields.
+"""
+
+PRESETS: dict[str, dict] = {
+    "stable_patient": {
+        "label": "Stable Patient",
+        "description": "Healthy adult with normal vitals and labs — expected LOW risk.",
+        "inputs": {
+            "HR": 78,
+            "MAP": 82,
+            "Temp": 36.8,
+            "Resp": 16,
+            "O2Sat": 98,
+            "Lactate": 0.8,
+            "WBC": 7.5,
+            "Creatinine": 0.9,
+            "Age": 45,
+            "Gender": "M",
+            "HoursAdmitted": 6,
+        },
+    },
+    "borderline_risk": {
+        "label": "Borderline Risk",
+        "description": "Mild tachycardia with slightly elevated lactate — MEDIUM risk zone.",
+        "inputs": {
+            "HR": 105,
+            "MAP": 68,
+            "Temp": 37.9,
+            "Resp": 22,
+            "O2Sat": 94,
+            "Lactate": 2.4,
+            "WBC": 12.0,
+            "Creatinine": 1.3,
+            "Age": 62,
+            "Gender": "F",
+            "HoursAdmitted": 18,
+        },
+    },
+    "high_risk": {
+        "label": "High Risk – Early Sepsis",
+        "description": "Fever, tachycardia, hypotension, and elevated lactate — HIGH risk.",
+        "inputs": {
+            "HR": 122,
+            "MAP": 58,
+            "Temp": 39.1,
+            "Resp": 28,
+            "O2Sat": 91,
+            "Lactate": 4.2,
+            "WBC": 18.5,
+            "Creatinine": 2.1,
+            "Age": 70,
+            "Gender": "M",
+            "HoursAdmitted": 36,
+        },
+    },
+    "septic_shock": {
+        "label": "Septic Shock",
+        "description": "Severely deranged vitals consistent with septic shock.",
+        "inputs": {
+            "HR": 138,
+            "MAP": 48,
+            "Temp": 35.2,
+            "Resp": 34,
+            "O2Sat": 86,
+            "Lactate": 7.8,
+            "WBC": 2.1,
+            "Creatinine": 3.6,
+            "Age": 78,
+            "Gender": "F",
+            "HoursAdmitted": 72,
+        },
+    },
+    "recovering_patient": {
+        "label": "Recovering Patient",
+        "description": "Post-treatment, vitals improving back toward normal.",
+        "inputs": {
+            "HR": 88,
+            "MAP": 74,
+            "Temp": 37.3,
+            "Resp": 18,
+            "O2Sat": 96,
+            "Lactate": 1.4,
+            "WBC": 10.2,
+            "Creatinine": 1.1,
+            "Age": 55,
+            "Gender": "M",
+            "HoursAdmitted": 48,
+        },
+    },
+}
